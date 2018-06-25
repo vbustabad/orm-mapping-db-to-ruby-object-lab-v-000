@@ -61,7 +61,7 @@ class Student
     sql = <<-SQL
     SELECT *
     FROM students
-    WHERE grade = "10" 
+    WHERE grade = "10"
     LIMIT ?
     SQL
 
@@ -83,6 +83,7 @@ class Student
     DB[:conn].execute(sql).flatten.map do |row|
       self.new_from_db(row)
     end
+    binding.pry
   end
 
   def self.all_students_in_grade_X(grade)
