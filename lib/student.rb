@@ -61,7 +61,7 @@ class Student
     FROM students
     WHERE grade = 10
     GROUP BY id
-    ORDER BY ASC
+    ORDER BY id ASC
     LIMIT 1
     SQL
 
