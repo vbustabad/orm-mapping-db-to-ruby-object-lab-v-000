@@ -59,6 +59,8 @@ class Student
     SELECT *
     FROM students
     WHERE grade = 10
+    GROUP BY id
+    ORDER BY ASC
     LIMIT 1
     SQL
 
