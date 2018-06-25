@@ -74,7 +74,7 @@ class Student
     sql = <<-SQL
     SELECT *
     FROM students
-    WHERE grade = "10"
+    WHERE grade = 10
     ORDER BY id ASC
     LIMIT 1
     SQL
