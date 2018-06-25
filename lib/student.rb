@@ -1,3 +1,5 @@
+require 'pry'
+
 class Student
   attr_accessor :id, :name, :grade
 
@@ -59,7 +61,7 @@ class Student
     sql = <<-SQL
     SELECT *
     FROM students
-    WHERE grade = "10"
+    WHERE grade = "10" 
     LIMIT ?
     SQL
 
