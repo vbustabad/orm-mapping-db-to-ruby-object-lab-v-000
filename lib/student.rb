@@ -80,7 +80,7 @@ class Student
     LIMIT 1
     SQL
 
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
   end
 
   def self.all_students_in_grade_X(grade)
