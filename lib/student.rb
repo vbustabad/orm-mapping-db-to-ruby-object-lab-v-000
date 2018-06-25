@@ -83,7 +83,6 @@ class Student
     DB[:conn].execute(sql).flatten.map do |row|
       self.new_from_db(row)
     end
-    binding.pry
   end
 
   def self.all_students_in_grade_X(grade)
