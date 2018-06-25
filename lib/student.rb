@@ -75,7 +75,7 @@ class Student
       WHERE grade = ?
     SQL
 
-    DB[:conn].execute(sql, self.grade)
+    DB[:conn].execute(sql, grade)
   end
 
   def save
